@@ -1,0 +1,24 @@
+Final API 26 instrumentation run
+Started: 2026-10-12T16:23:20.5234976+08:00
+Device: emulator-5556
+App APK: app/build/outputs/apk/debug/app-debug.apk
+Test APK: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+
+Command: adb -s emulator-5556 get-state
+device
+Exit code: 0
+Android release: 8.0.0
+API level: 26
+
+Command: adb -s emulator-5556 install -r app/build/outputs/apk/debug/app-debug.apk
+Performing Streamed Install Success
+Exit code: 0
+
+Command: adb -s emulator-5556 install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+Performing Streamed Install Success
+Exit code: 0
+
+Command: adb -s emulator-5556 shell am instrument -w cn.flashcard.app.test/androidx.test.runner.AndroidJUnitRunner
+ cn.flashcard.app.DeviceSmokeTest:... cn.flashcard.app.RepositoryDeviceTest:.........  Time: 18.117  OK (12 tests)  
+Exit code: 0
+Finished: 2026-10-12T16:23:45.6706868+08:00

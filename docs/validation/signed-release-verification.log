@@ -1,0 +1,23 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Exam Flashcards, O=Local Offline App, C=CN
+Signer #1 certificate SHA-256 digest: c296845659096bd7faca97529fc962f0e4d59b08f6dd8a9577e73a29e797424b
+Signer #1 certificate SHA-1 digest: 37c74d42dbb97effc680f0724fb2fca9b6b271be
+Signer #1 certificate MD5 digest: d01c9d05e6392501f95f117c0c9e4546
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: 46cc4919f76668d489352230ae029a45c83018460959702eb21db46d42df9e48
+Signer #1 public key SHA-1 digest: 4513855b0ecb9401da8f848a3234149ab77c384e
+Signer #1 public key MD5 digest: 77b252c1c8e55e05d841d7c8051dbacb
+10-12 16:31:22.262 28888 35236 W ziparchive: Unable to open 'dist\��������-1.0.0.apk': Illegal byte sequence
+10-12 16:31:22.263 28888 35236 W zipro   : Error opening archive dist\��������-1.0.0.apk: I/O error
+ERROR: dump failed because no AndroidManifest.xml found
+package: cn.flashcard.app
+permission: cn.flashcard.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='cn.flashcard.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'

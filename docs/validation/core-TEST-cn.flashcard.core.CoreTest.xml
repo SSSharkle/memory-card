@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cn.flashcard.core.CoreTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-12T08:12:34" hostname="MSI" time="5.118">
+  <properties/>
+  <testcase name="backupRejectsBlankBasicAnswerSignatureMismatchAndTruncatedZip" classname="cn.flashcard.core.CoreTest" time="0.136"/>
+  <testcase name="backupRoundtripValidationAndPerformance" classname="cn.flashcard.core.CoreTest" time="0.537"/>
+  <testcase name="parserCodeClozeErrorsAndDedup" classname="cn.flashcard.core.CoreTest" time="0.111"/>
+  <testcase name="tenThousandMarkdownNotesAndBackupRoundtrip" classname="cn.flashcard.core.CoreTest" time="4.331"/>
+  <testcase name="newCardRatingsAndLearning" classname="cn.flashcard.core.CoreTest" time="0.002"/>
+  <system-out><![CDATA[Validated 10000 notes/cards in 195ms
+10k notes: parse=1777ms dedup=1818ms ZIP roundtrip=616ms bytes=612803
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

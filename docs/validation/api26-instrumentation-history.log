@@ -1,0 +1,126 @@
+API 26 device instrumentation run
+Started: 2026-10-12 15:33:47 +08:00
+Device: emulator-5556
+Flight mode setting: 1
+Command: adb -s emulator-5556 shell am instrument -w cn.flashcard.app.test/androidx.test.runner.AndroidJUnitRunner
+--- runner output ---
+
+cn.flashcard.app.DeviceSmokeTest:..
+cn.flashcard.app.RepositoryDeviceTest:
+Error in initializationError(cn.flashcard.app.RepositoryDeviceTest):
+java.lang.RuntimeException: Failed to instantiate test runner class androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+
+
+	at androidx.test.ext.junit.runners.AndroidJUnit4.throwInitializationError(AndroidJUnit4.java:129)
+	at androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:121)
+	at androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:82)
+	at androidx.test.ext.junit.runners.AndroidJUnit4.<init>(AndroidJUnit4.java:56)
+	... 13 trimmed
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.lang.reflect.Constructor.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:334)
+	at androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:112)
+	... 16 more
+Caused by: org.junit.runners.model.InvalidTestClassError: Invalid test class 'cn.flashcard.app.RepositoryDeviceTest':
+  1. Method persistentRestartRecreatesIdenticalQueue() should be void
+	at org.junit.runners.ParentRunner.validate(ParentRunner.java:525)
+	at org.junit.runners.ParentRunner.<init>(ParentRunner.java:92)
+	at org.junit.runners.BlockJUnit4ClassRunner.<init>(BlockJUnit4ClassRunner.java:74)
+	at androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner.<init>(AndroidJUnit4ClassRunner.java:50)
+	at androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner.<init>(AndroidJUnit4ClassRunner.java:55)
+	... 19 more
+
+
+Time: 1.442
+There was 1 failure:
+1) initializationError(cn.flashcard.app.RepositoryDeviceTest)
+java.lang.RuntimeException: Failed to instantiate test runner class androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+
+
+	at androidx.test.ext.junit.runners.AndroidJUnit4.throwInitializationError(AndroidJUnit4.java:129)
+	at androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:121)
+	at androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:82)
+	at androidx.test.ext.junit.runners.AndroidJUnit4.<init>(AndroidJUnit4.java:56)
+	... 13 trimmed
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.lang.reflect.Constructor.newInstance0(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:334)
+	at androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:112)
+	... 16 more
+Caused by: org.junit.runners.model.InvalidTestClassError: Invalid test class 'cn.flashcard.app.RepositoryDeviceTest':
+  1. Method persistentRestartRecreatesIdenticalQueue() should be void
+	at org.junit.runners.ParentRunner.validate(ParentRunner.java:525)
+	at org.junit.runners.ParentRunner.<init>(ParentRunner.java:92)
+	at org.junit.runners.BlockJUnit4ClassRunner.<init>(BlockJUnit4ClassRunner.java:74)
+	at androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner.<init>(AndroidJUnit4ClassRunner.java:50)
+	at androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner.<init>(AndroidJUnit4ClassRunner.java:55)
+	... 19 more
+
+FAILURES!!!
+Tests run: 3,  Failures: 1
+
+
+--- result ---
+Exit code: 0
+Finished: 2026-10-12 15:33:49 +08:00
+Device details: Android 8.0.0 (API 26)
+Post-run connectivity: airplane_mode_on=1; wifi_on=0; Wi-Fi is disabled
+
+=== Rebuilt APK rerun ===
+Started: 2026-10-12 15:38:06 +08:00
+Device: emulator-5556 (Android 8.0.0 / API 26)
+App APK: D:\GPT小玩具\手机卡片记忆\app\build\outputs\apk\debug\app-debug.apk (18867854 bytes; 10/12/2026 15:36:44)
+Test APK: D:\GPT小玩具\手机卡片记忆\app\build\outputs\apk\androidTest\debug\app-debug-androidTest.apk (1099009 bytes; 10/12/2026 15:36:45)
+Install command: adb -s emulator-5556 install -r app/build/outputs/apk/debug/app-debug.apk
+Performing Streamed Install
+Success
+App install exit code: 0
+Install command: adb -s emulator-5556 install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+Performing Streamed Install
+Success
+Instrumentation APK install exit code: 0
+Instrumentation command started: 2026-10-12 15:39:21 +08:00
+Command: adb -s emulator-5556 shell am instrument -w cn.flashcard.app.test/androidx.test.runner.AndroidJUnitRunner
+--- runner output ---
+
+cn.flashcard.app.DeviceSmokeTest:..
+cn.flashcard.app.RepositoryDeviceTest:........
+
+Time: 2.155
+
+OK (10 tests)
+
+
+--- rerun result ---
+Exit code: 0
+Finished: 2026-10-12 15:39:23 +08:00
+Post-rerun device: Android 8.0.0 (API 26)
+Connectivity: airplane_mode_on=1; wifi_on=0; Wi-Fi is disabled
+
+=== 12-test regression run ===
+Started: 2026-10-12 15:56:32 +08:00
+App APK: D:\GPT小玩具\手机卡片记忆\app\build\outputs\apk\debug\app-debug.apk (18672057 bytes; 10/12/2026 15:53:01)
+Test APK: D:\GPT小玩具\手机卡片记忆\app\build\outputs\apk\androidTest\debug\app-debug-androidTest.apk (1103945 bytes; 10/12/2026 15:53:10)
+Install command: adb -s emulator-5556 install -r app/build/outputs/apk/debug/app-debug.apk
+Performing Streamed Install
+Success
+App install exit code: 0
+Install command: adb -s emulator-5556 install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+Performing Streamed Install
+Success
+Instrumentation APK install exit code: 0
+Instrumentation command started: 2026-10-12 15:57:05 +08:00
+Command: adb -s emulator-5556 shell am instrument -w cn.flashcard.app.test/androidx.test.runner.AndroidJUnitRunner
+--- runner output ---
+
+cn.flashcard.app.DeviceSmokeTest:...
+cn.flashcard.app.RepositoryDeviceTest:.........
+
+Time: 3.914
+
+OK (12 tests)
+
+
+--- 12-test result ---
+Exit code: 0
+Finished: 2026-10-12 15:57:09 +08:00

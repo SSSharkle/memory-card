@@ -1,0 +1,18 @@
+Final signed release reinstall and launch
+Started: 2026-10-12T16:28:21.6230032+08:00
+APK SHA256: 9ECB8BF90E4E6285D332416AE9B833FB4F57C0E423E826EC7DDD9C2CEF7CCAD7
+
+Command: adb -s emulator-5554 uninstall cn.flashcard.app
+Success
+Exit code: 0
+
+Command: adb -s emulator-5554 install dist/考研闪卡-1.0.0.apk
+Performing Streamed Install Success
+Exit code: 0
+
+Command: adb -s emulator-5554 shell monkey -p cn.flashcard.app 1
+  bash arg: -p   bash arg: cn.flashcard.app   bash arg: 1 args: [-p, cn.flashcard.app, 1]  arg: "-p"  arg: "cn.flashcard.app"  arg: "1" data="cn.flashcard.app" Events injected: 1 ## Network stats: elapsed time=16ms (0ms mobile, 0ms wifi, 16ms not connected)
+Exit code: 0
+App PID after launch: 36240
+AndroidRuntime app crash matches: none observed
+Finished: 2026-10-12T16:28:25.0563385+08:00

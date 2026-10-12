@@ -1,0 +1,30 @@
+Final API 35 instrumentation run
+Started: 2026-10-12T16:27:09.8901715+08:00
+Device: emulator-5554
+App APK: app/build/outputs/apk/debug/app-debug.apk
+App APK SHA256: 7BE9DEF3CEC98D385DD54213A14E18757A0F607CCFE94D495814817F49394E31
+Test APK: app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+Test APK SHA256: 8AFDF6EE2DFB653E60052DC0324D0E2CA4F24FD2CC804802C2B7C6844048A9CE
+
+Command: adb -s emulator-5554 get-state
+device
+Exit code: 0
+Android release: 15
+API level: 35
+
+Command: adb -s emulator-5554 uninstall cn.flashcard.app
+Success
+Exit code: 0
+
+Command: adb -s emulator-5554 install app/build/outputs/apk/debug/app-debug.apk
+Performing Streamed Install Success
+Exit code: 0
+
+Command: adb -s emulator-5554 install app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+Performing Streamed Install Success
+Exit code: 0
+
+Command: adb -s emulator-5554 shell am instrument -w cn.flashcard.app.test/androidx.test.runner.AndroidJUnitRunner
+ cn.flashcard.app.DeviceSmokeTest:... cn.flashcard.app.RepositoryDeviceTest:.........  Time: 25.439  OK (12 tests)  
+Exit code: 0
+Finished: 2026-10-12T16:27:38.6517064+08:00
